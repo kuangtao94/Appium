@@ -1,0 +1,34 @@
+n1: 12.30  #int和float类型的数字
+n2: true
+n3: false  #布尔值用true和false表示
+n4: ~   # None用~表示
+time1: 2019-05-30t22:21:43.10+08:00
+date1: 2019-05-30
+n6: !!str 123
+n7: !!str true
+- admin1: 123456  #yaml里面写一个数组，前面加一个‘-’符号
+- admin2: 111111  #对应python 的是 list
+- admin3: 222222
+
+#list嵌套dict
+- user: admin1
+  psw: '123456'
+
+- user: admin2
+  psw: '111111'
+
+- user: admin3
+  psw: '222222'
+
+#dict嵌套list
+nub1:
+    - admin1
+    - '123456'
+
+nb2:
+    - admin2
+    - '111111'
+
+nb3:
+    - admin3
+    - '222222'
